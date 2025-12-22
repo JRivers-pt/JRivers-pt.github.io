@@ -1,14 +1,17 @@
 # ⚡ João Ribeiro - Portfolio Website
 
-A modern, high-performance portfolio website built for **João Ribeiro**, a Full-Stack Developer & AI Entrepreneur based in Portugal.
+> **"I connect the dots between physical infrastructure, code, and profit."**
+
+A modern, high-performance portfolio website built for **João Ribeiro**, a **Systems Integrator turned Full-Stack Developer**. This site showcases the bridge between "field engineer" reality (CCTV, POS, Hardware) and modern AI-driven Development.
 
 ![Portfolio Preview](https://via.placeholder.com/1200x630/0a0a0f/8b5cf6?text=Portfolio+Preview)
 
-## 🚀 Features
+## 🚀 The "Hybrid" Advantage
 
-- **Dark Tech Aesthetic**: Premium glassmorphism design with animated backgrounds.
+- **End-to-End Expertise**: From installing anti-theft antennas to deploying SaaS apps.
+- **Hardware & Security**: Deep knowledge of CCTV, Network Admin, and POS Systems.
+- **Business-First**: Marketing & SEO strategies that actually drive sales.
 - **Vibecoding**: Smooth typing animations and interactive elements.
-- **Fully Responsive**: Optimized for mobile, tablet, and desktop.
 - **Project Showcase**: Highlights 6 key projects with status indicators (Featured, Live, WIP).
 - **Tech Stack Display**: Visual categorization of skills (Frontend, Backend, AI).
 
