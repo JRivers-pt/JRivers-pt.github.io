@@ -1,17 +1,17 @@
 # ⚡ João Ribeiro - Portfolio Website
 
-> **"I connect the dots between physical infrastructure, code, and profit."**
+> **"I bridge the gap between technical complexity and business reality."**
 
-A modern, high-performance portfolio website built for **João Ribeiro**, a **Systems Integrator turned Full-Stack Developer**. This site showcases the bridge between "field engineer" reality (CCTV, POS, Hardware) and modern AI-driven Development.
+A modern, high-performance portfolio website built for **João Ribeiro**, an **IT Strategist turned Full-Stack Developer**. This site showcases the fusion of deep **IT Infrastructure** knowledge with **Vibecoding**—building practical, AI-driven SaaS solutions.
 
 ![Portfolio Preview](https://via.placeholder.com/1200x630/0a0a0f/8b5cf6?text=Portfolio+Preview)
 
 ## 🚀 The "Hybrid" Advantage
 
-- **End-to-End Expertise**: From installing anti-theft antennas to deploying SaaS apps.
-- **Hardware & Security**: Deep knowledge of CCTV, Network Admin, and POS Systems.
-- **Business-First**: Marketing & SEO strategies that actually drive sales.
-- **Vibecoding**: Smooth typing animations and interactive elements.
+- **The Bridge**: connecting complex IT systems with modern business goals.
+- **Solid IT Foundation**: Expertise in Network Admin, Security, and Enterprise Software.
+- **Vibecoding**: Rapid, AI-enhanced development that solves real problems.
+- **Business-First**: Marketing & SEO strategies that drive growth.
 - **Project Showcase**: Highlights 6 key projects with status indicators (Featured, Live, WIP).
 - **Tech Stack Display**: Visual categorization of skills (Frontend, Backend, AI).
 
