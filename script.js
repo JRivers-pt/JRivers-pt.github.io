@@ -64,10 +64,11 @@ const projects = [
 
 const typingPhrases = [
     'Full-Stack Developer',
+    'IT Consultant',
     'AI Entrepreneur',
+    'Business Strategist',
     'Vibecoder',
-    'SaaS Builder',
-    'Problem Solver'
+    'SaaS Builder'
 ];
 
 // ========================================
