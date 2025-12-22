@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="João Ribeiro - Full-Stack Developer & AI Entrepreneur building SaaS products for Portugal's business ecosystem.">
+    <meta name="author" content="João Ribeiro">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="João Ribeiro | Full-Stack Developer & AI Entrepreneur">
+    <meta property="og:description" content="Building SaaS products for Portugal's business ecosystem. React, Next.js, TypeScript, and AI integrations.">
+    <title>João Ribeiro | Full-Stack Developer & AI Entrepreneur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-gradient"></div>
+    <div class="floating-orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo"><span class="logo-icon">⚡</span><span class="logo-text">JR</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link nav-link-cta">Let's Talk</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge"><span class="badge-dot"></span><span>Available for opportunities</span></div>
+                <h1 class="hero-title"><span class="title-line">Hi, I'm</span><span class="title-name gradient-text">João Ribeiro</span></h1>
+                <p class="hero-subtitle"><span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span></p>
+                <p class="hero-description">Full-Stack Developer & AI Entrepreneur building <span class="highlight">SaaS products</span> for Portugal's business ecosystem. Turning ideas into deployed solutions through <span class="highlight">vibecoding</span>.</p>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-number" data-count="11">0</span><span class="stat-label">Projects</span></div>
+                    <div class="stat"><span class="stat-number" data-count="5">0</span><span class="stat-label">Live Apps</span></div>
+                    <div class="stat"><span class="stat-number" data-count="6">0</span><span class="stat-label">Technologies</span></div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"><span>View My Work</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="https://github.com/JRivers-pt" target="_blank" class="btn btn-secondary"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><span>GitHub</span></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header"><div class="code-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div><span class="code-title">developer.ts</span></div>
+                    <div class="code-body"><pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"João Ribeiro"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Full-Stack Developer"</span>,
+  <span class="code-property">focus</span>: [<span class="code-string">"React"</span>, <span class="code-string">"TypeScript"</span>, <span class="code-string">"AI"</span>],
+  <span class="code-property">passion</span>: <span class="code-string">"Vibecoding"</span>
+};</code></pre></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">About Me</span><h2 class="section-title">Turning Ideas Into <span class="gradient-text">Reality</span></h2></div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">I'm a <strong>Full-Stack Developer</strong> and <strong>Tech Entrepreneur</strong> based in Portugal, passionate about building products that solve real business problems.</p>
+                    <p>My journey combines deep technical skills with a business-first mindset. I specialize in creating <strong>SaaS applications</strong> that help businesses automate, comply, and grow.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item"><div class="highlight-icon">🇵🇹</div><div class="highlight-text"><strong>Portugal-Focused</strong><span>Building for local business needs</span></div></div>
+                        <div class="highlight-item"><div class="highlight-icon">🚀</div><div class="highlight-text"><strong>Rapid Deployment</strong><span>From idea to production fast</span></div></div>
+                        <div class="highlight-item"><div class="highlight-icon">🤖</div><div class="highlight-text"><strong>AI-Enhanced</strong><span>Integrating modern AI capabilities</span></div></div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame"><div class="avatar-placeholder"><span class="avatar-initials">JR</span></div></div>
+                    <div class="floating-badge badge-1"><span>💻</span> Full-Stack</div>
+                    <div class="floating-badge badge-2"><span>⚡</span> Vibecoder</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Tech Stack</span><h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2></div>
+            <div class="skills-grid">
+                <div class="skill-category"><h3 class="category-title"><span class="category-icon">🎨</span>Frontend</h3><div class="skill-items"><div class="skill-item"><span>⚛️</span><span>React</span></div><div class="skill-item"><span>▲</span><span>Next.js</span></div><div class="skill-item"><span>TS</span><span>TypeScript</span></div><div class="skill-item"><span>🌊</span><span>Tailwind</span></div><div class="skill-item"><span>⚡</span><span>Vite</span></div></div></div>
+                <div class="skill-category"><h3 class="category-title"><span class="category-icon">⚙️</span>Backend</h3><div class="skill-items"><div class="skill-item"><span>🟢</span><span>Node.js</span></div><div class="skill-item"><span>⚡</span><span>Supabase</span></div><div class="skill-item"><span>🐘</span><span>PostgreSQL</span></div><div class="skill-item"><span>🔗</span><span>REST APIs</span></div></div></div>
+                <div class="skill-category"><h3 class="category-title"><span class="category-icon">🤖</span>AI & Tools</h3><div class="skill-items"><div class="skill-item"><span>🧠</span><span>OpenAI</span></div><div class="skill-item"><span>📦</span><span>Git</span></div><div class="skill-item"><span>▲</span><span>Vercel</span></div><div class="skill-item"><span>🎨</span><span>UI/UX</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Portfolio</span><h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2></div>
+            <div class="projects-grid" id="projectsGrid"></div>
+            <div class="projects-cta"><a href="https://github.com/JRivers-pt?tab=repositories" target="_blank" class="btn btn-outline"><span>View All 11 Projects on GitHub</span></a></div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Contact</span><h2 class="section-title">Let's Build <span class="gradient-text">Together</span></h2></div>
+            <div class="contact-content">
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h3>Ready to discuss a project?</h3>
+                        <p>Whether you need a developer for a new venture or want to collaborate, I'm here to help.</p>
+                        <div class="cta-buttons">
+                            <a href="https://github.com/JRivers-pt" target="_blank" class="btn btn-secondary"><span>GitHub</span></a>
+                            <a href="https://linkedin.com" target="_blank" class="btn btn-primary"><span>Connect on LinkedIn</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content"><p>&copy; 2024 João Ribeiro. Built with passion and vibecoding. ⚡</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
