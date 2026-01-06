@@ -1,23 +1,13 @@
 // ========================================
-// PORTFOLIO DATA
+// PORTFOLIO DATA - Top 6 Featured + Rest
 // ========================================
 const projects = [
-    {
-        id: 'saft-pro',
-        title: 'SAFT PRO',
-        description: 'Portuguese tax compliance tool for analyzing and validating SAFT-PT files. Generates professional PDF reports with risk analysis.',
-        tags: ['🔥 Featured', 'Next.js', 'JavaScript'],
-        features: ['SAFT-PT Validation', 'PDF Reports', 'Excel Export'],
-        liveUrl: 'https://saft-pro.vercel.app',
-        githubUrl: 'https://github.com/JRivers-pt/SaftPRO',
-        icon: '📊',
-        featured: true
-    },
+    // === FEATURED PROJECTS (Top 6 for job hunting) ===
     {
         id: 'ga4-dashboard',
         title: 'GA4 Analytics Dashboard',
         description: 'Real-time Google Analytics 4 dashboard with OAuth integration, performance scoring, and AI-powered insights.',
-        tags: ['🔥 Featured', 'GA4 API', 'JavaScript'],
+        tags: ['🔥 Featured', 'GA4 API', 'OAuth', 'JavaScript'],
         features: ['Real-time Stats', 'Performance Score', 'AI Insights', 'PT/EN'],
         liveUrl: 'https://jrivers-pt.github.io/ga4-dashboard/',
         githubUrl: 'https://github.com/JRivers-pt/ga4-dashboard',
@@ -25,15 +15,59 @@ const projects = [
         featured: true
     },
     {
+        id: 'saft-pro',
+        title: 'SAFT PRO',
+        description: 'Portuguese tax compliance tool for analyzing and validating SAFT-PT files. Generates professional PDF reports with risk analysis.',
+        tags: ['🔥 Featured', 'Next.js', 'PDF Generation'],
+        features: ['SAFT-PT Validation', 'PDF Reports', 'Excel Export'],
+        liveUrl: 'https://saft-pro.vercel.app',
+        githubUrl: 'https://github.com/JRivers-pt/SaftPRO',
+        icon: '📊',
+        featured: true
+    },
+    {
         id: 'scirecount',
         title: 'ScireCount Platform',
-        description: 'Premium people-counting dashboard for various people counting hardware. Real-time metrics with glassmorphism design.',
-        tags: ['React', 'TypeScript', 'IoT'],
-        features: ['Real-time Dashboard', 'Hardware Agnostic', 'i18n'],
+        description: 'Premium people-counting dashboard for IoT hardware. Real-time metrics with glassmorphism design and internationalization.',
+        tags: ['🔥 Featured', 'React', 'TypeScript', 'IoT'],
+        features: ['Real-time Dashboard', 'Hardware Integration', 'i18n'],
         liveUrl: 'https://scirecount-platform.vercel.app',
         githubUrl: 'https://github.com/JRivers-pt/scirecount-platform',
-        icon: '👥'
+        icon: '👥',
+        featured: true
     },
+    {
+        id: 'vistofacil',
+        title: 'VistoFácil',
+        description: 'AI-powered Portuguese visa application platform. Simplifies Digital Nomad, D7, and Golden Visa processes with intelligent validation.',
+        tags: ['🔥 Featured', 'AI', 'Supabase', 'Full-Stack'],
+        features: ['AI Validation', '3 Visa Types', 'SEO Blog'],
+        githubUrl: 'https://github.com/JRivers-pt/VistoFacil',
+        icon: '🛂',
+        featured: true
+    },
+    {
+        id: 'gestor',
+        title: 'Gestor Etiquetagem',
+        description: 'Label and weight management PWA for retail operations. Streamlines inventory labeling with modern React architecture.',
+        tags: ['🔥 Featured', 'React', 'TypeScript', 'PWA'],
+        features: ['Weight Control', 'Label Management', 'Offline Ready'],
+        liveUrl: 'https://gestor-etiquetagem.vercel.app',
+        githubUrl: 'https://github.com/JRivers-pt/Gestor-Etiquetagem',
+        icon: '🏷️',
+        featured: true
+    },
+    {
+        id: 'jobpilot',
+        title: 'JobPilot',
+        description: 'AI-powered job application assistant. Crafts personalized cover letters and tracks application progress with smart analytics.',
+        tags: ['🔥 Featured', 'AI', 'Next.js'],
+        features: ['AI Cover Letters', 'Application Tracking', 'Analytics'],
+        githubUrl: 'https://github.com/JRivers-pt/Jobpilot',
+        icon: '💼',
+        featured: true
+    },
+    // === OTHER PROJECTS ===
     {
         id: 'ipesa-balancas',
         title: 'Ipesa Balanças',
@@ -42,34 +76,6 @@ const projects = [
         features: ['Product Catalog', 'Partnership Display', 'Responsive'],
         githubUrl: 'https://github.com/JRivers-pt/ipesa-balancas',
         icon: '⚖️'
-    },
-    {
-        id: 'vistofacil',
-        title: 'VistoFácil',
-        description: 'AI-powered Portuguese visa application platform. Simplifies Digital Nomad, D7, and Golden Visa processes.',
-        tags: ['AI', 'Supabase'],
-        features: ['AI Validation', '3 Visa Types', 'SEO Blog'],
-        githubUrl: 'https://github.com/JRivers-pt/VistoFacil',
-        icon: '🛂'
-    },
-    {
-        id: 'jobpilot',
-        title: 'JobPilot',
-        description: 'AI-powered job application assistant. Helps users craft better applications and track their job search progress.',
-        tags: ['AI', 'Next.js'],
-        features: ['AI Cover Letters', 'Application Tracking', 'Job Search'],
-        githubUrl: 'https://github.com/JRivers-pt/Jobpilot',
-        icon: '💼'
-    },
-    {
-        id: 'gestor',
-        title: 'Gestor Etiquetagem',
-        description: 'Label and weight management application for retail operations. Streamlines inventory labeling processes.',
-        tags: ['React', 'TypeScript'],
-        features: ['Weight Control', 'Label Management', 'PWA Ready'],
-        liveUrl: 'https://gestor-etiquetagem.vercel.app',
-        githubUrl: 'https://github.com/JRivers-pt/Gestor-Etiquetagem',
-        icon: '🏷️'
     },
     {
         id: 'vocalflow',
