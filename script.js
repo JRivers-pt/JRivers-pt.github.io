@@ -353,8 +353,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ========================================
+// LANGUAGE TOGGLE
+// ========================================
+const langToggle = document.getElementById('lang-toggle');
+if (langToggle) {
+    langToggle.addEventListener('click', () => {
+        const newLang = currentLang === 'en' ? 'pt' : 'en';
+        switchLanguage(newLang);
+    });
+}
+
+// ========================================
 // INITIALIZE
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
+
+    // Apply saved language or default to English
+    if (typeof updateUILanguage === 'function') {
+        setTimeout(updateUILanguage, 100);
+    }
 });
