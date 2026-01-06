@@ -14,6 +14,17 @@ const projects = [
         featured: true
     },
     {
+        id: 'ga4-dashboard',
+        title: 'GA4 Analytics Dashboard',
+        description: 'Real-time Google Analytics 4 dashboard with OAuth integration, performance scoring, and AI-powered insights.',
+        tags: ['🔥 Featured', 'GA4 API', 'JavaScript'],
+        features: ['Real-time Stats', 'Performance Score', 'AI Insights', 'PT/EN'],
+        liveUrl: 'https://jrivers-pt.github.io/ga4-dashboard/',
+        githubUrl: 'https://github.com/JRivers-pt/ga4-dashboard',
+        icon: '📈',
+        featured: true
+    },
+    {
         id: 'scirecount',
         title: 'ScireCount Platform',
         description: 'Premium people-counting dashboard for various people counting hardware. Real-time metrics with glassmorphism design.',
@@ -21,7 +32,16 @@ const projects = [
         features: ['Real-time Dashboard', 'Hardware Agnostic', 'i18n'],
         liveUrl: 'https://scirecount-platform.vercel.app',
         githubUrl: 'https://github.com/JRivers-pt/scirecount-platform',
-        icon: '📈'
+        icon: '👥'
+    },
+    {
+        id: 'ipesa-balancas',
+        title: 'Ipesa Balanças',
+        description: 'Product showcase page for Ipesa industrial scales. Partnership display with TechScire for retail hardware solutions.',
+        tags: ['Landing Page', 'HTML/CSS'],
+        features: ['Product Catalog', 'Partnership Display', 'Responsive'],
+        githubUrl: 'https://github.com/JRivers-pt/ipesa-balancas',
+        icon: '⚖️'
     },
     {
         id: 'vistofacil',
@@ -31,6 +51,15 @@ const projects = [
         features: ['AI Validation', '3 Visa Types', 'SEO Blog'],
         githubUrl: 'https://github.com/JRivers-pt/VistoFacil',
         icon: '🛂'
+    },
+    {
+        id: 'jobpilot',
+        title: 'JobPilot',
+        description: 'AI-powered job application assistant. Helps users craft better applications and track their job search progress.',
+        tags: ['AI', 'Next.js'],
+        features: ['AI Cover Letters', 'Application Tracking', 'Job Search'],
+        githubUrl: 'https://github.com/JRivers-pt/Jobpilot',
+        icon: '💼'
     },
     {
         id: 'gestor',
@@ -59,6 +88,42 @@ const projects = [
         features: ['Local Business Focus', 'Full-Stack', 'Modern Stack'],
         githubUrl: 'https://github.com/JRivers-pt/locallift',
         icon: '🏪'
+    },
+    {
+        id: 'sanctum',
+        title: 'Sanctum',
+        description: 'Secure password manager and vault application. End-to-end encryption for sensitive data storage.',
+        tags: ['Security', 'Encryption'],
+        features: ['Password Storage', 'Secure Vault', 'E2E Encryption'],
+        githubUrl: 'https://github.com/JRivers-pt/Sanctum',
+        icon: '🔐'
+    },
+    {
+        id: 'airbnb-leads',
+        title: 'AirbnbLeads',
+        description: 'Lead generation tool for Airbnb property managers. Automates prospecting and outreach workflows.',
+        tags: ['Automation', 'Lead Gen'],
+        features: ['Lead Scraping', 'Automated Outreach', 'CRM Integration'],
+        githubUrl: 'https://github.com/JRivers-pt/AirbnbLeads',
+        icon: '🏠'
+    },
+    {
+        id: 'contafranca',
+        title: 'ContaFranca Landing',
+        description: 'Landing page for ContaFranca accounting services. Modern design with lead capture functionality.',
+        tags: ['Landing Page', 'Marketing'],
+        features: ['Lead Capture', 'Modern Design', 'SEO Optimized'],
+        githubUrl: 'https://github.com/JRivers-pt/contafranca-landing-page',
+        icon: '💰'
+    },
+    {
+        id: '2580',
+        title: '2580 Project',
+        description: 'Experimental project exploring innovative web technologies and design patterns.',
+        tags: ['🚧 In Dev', 'Experimental'],
+        features: ['Innovation Lab', 'Tech Exploration', 'Prototype'],
+        githubUrl: 'https://github.com/JRivers-pt/2580',
+        icon: '🔬'
     }
 ];
 
