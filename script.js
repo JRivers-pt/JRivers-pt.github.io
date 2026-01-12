@@ -4,6 +4,16 @@
 const projects = [
     // === FEATURED PROJECTS (Top 6 for job hunting) ===
     {
+        id: 'leadpronto',
+        title: 'LeadPronto',
+        description: 'AI-powered property booking platform featuring RAG (Retrieval-Augmented Generation) for intelligent, context-aware property recommendations and natural language booking.',
+        tags: ['🔥 Featured', 'RAG', 'Google Gemini', 'React'],
+        features: ['RAG AI Chat', 'Property Search', 'Smart Booking', 'Real-time'],
+        githubUrl: 'https://github.com/JRivers-pt/LeadPronto',
+        icon: '🏠',
+        featured: true
+    },
+    {
         id: 'ga4-dashboard',
         title: 'GA4 Analytics Dashboard',
         description: 'Real-time Google Analytics 4 dashboard with OAuth integration, performance scoring, and AI-powered insights.',
