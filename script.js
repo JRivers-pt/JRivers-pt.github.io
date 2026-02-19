@@ -611,6 +611,15 @@ function safeHTML(selector, html) {
 document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
 
+    // Language Toggle Listener
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            const newLang = currentLang === 'en' ? 'pt' : 'en';
+            switchLanguage(newLang);
+        });
+    }
+
     // Apply saved language or default to English
     if (typeof updateUILanguage === 'function') {
         setTimeout(updateUILanguage, 100);
