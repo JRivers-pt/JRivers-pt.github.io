@@ -4,7 +4,6 @@
 const projects = [
     // === FEATURED PROJECTS (Top 6 for job hunting) ===
     {
-    {
         id: 'pontual',
         title: 'Pontual',
         description: 'Real-time employee attendance tracking system. Features biometric integration, shift management, and automated payroll reporting.',
@@ -22,37 +21,6 @@ const projects = [
         features: ['RAG AI Chat', 'Property Search', 'Smart Booking', 'Real-time'],
         githubUrl: 'https://github.com/JRivers-pt/LeadPronto',
         icon: '🏠',
-        featured: true
-    },
-    {
-        id: 'accesshome-pro',
-        title: 'AccessHome Pro',
-        description: 'AI-powered accessibility consultant for interior designers. Performs spatial audits and generates transformed, compliant room visualizations.',
-        tags: ['🔥 Featured', 'React', 'AI', 'Accessibility'],
-        features: ['Spatial Analysis', 'Visual Transformation', 'Mobility Standards'],
-        githubUrl: 'https://github.com/JRivers-pt/spatial-asteroid',
-        icon: '♿',
-        featured: true
-    },
-    {
-        id: 'techscire-remodelacoes',
-        title: 'Techscire Remodelações',
-        description: 'High-performance landing page for construction services. Dark-mode aesthetics with automated lead routing.',
-        tags: ['🔥 Featured', 'HTML', 'Tailwind', 'SEO'],
-        features: ['Lead Gen', 'Dark Mode', 'Speed Optimized'],
-        liveUrl: 'https://jrivers-pt.github.io/techscire-remodelacoes/',
-        githubUrl: 'https://github.com/JRivers-pt/techscire-remodelacoes',
-        icon: '🏗️',
-        featured: true
-    },
-    {
-        id: 'yt-music-downloader',
-        title: 'YT Music Downloader',
-        description: 'Desktop utility for downloading and converting audio from YouTube. Python-based automation with FFmpeg integration.',
-        tags: ['🔥 Featured', 'Python', 'FFmpeg', 'Automation'],
-        features: ['Audio Extraction', 'Metadata Tagging', 'Batch Processing'],
-        githubUrl: 'https://github.com/JRivers-pt/distant-andromeda',
-        icon: '🎵',
         featured: true
     },
     {
@@ -405,14 +373,205 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ========================================
-// LANGUAGE TOGGLE
+// TRANSLATIONS
 // ========================================
-const langToggle = document.getElementById('lang-toggle');
-if (langToggle) {
-    langToggle.addEventListener('click', () => {
-        const newLang = currentLang === 'en' ? 'pt' : 'en';
-        switchLanguage(newLang);
-    });
+let currentLang = 'en';
+
+const translations = {
+    en: {
+        nav: {
+            about: 'About',
+            skills: 'Skills',
+            projects: 'Projects',
+            contact: "Let's Talk"
+        },
+        hero: {
+            badge: 'Bridging Business & Technology',
+            title1: 'IT Strategist turned',
+            title2: 'Full-Stack Developer',
+            subtitle: 'Full-Stack Developer | IT Consultant | AI Entrepreneur',
+            description: 'Leveraging <strong>7+ years of Real-World IT & Business Strategy</strong> to build practical, <span class="highlight">business-centric SaaS solutions</span>. I bridge the gap between complex systems, code, and profit.',
+            cta1: 'See My Code',
+            cta2: 'My Journey',
+            stats: {
+                projects: 'Projects',
+                exp: 'Years IT Exp.',
+                tech: 'Technologies'
+            }
+        },
+        about: {
+            tag: 'My Unique Angle',
+            title: 'The <span class="gradient-text">Hybrid</span> Advantage',
+            text1: "My background isn't typical. I haven't just written code—I've <strong>planned and installed people counting solutions for major clients</strong>, <strong>administered Microsoft 365 for logistics</strong>, and built business strategies that drive growth.",
+            text2: "I call my approach <strong>Vibecoding</strong>: the ability to rapidly turn abstract ideas into deployed, functional software using modern AI and a deep understanding of IT systems.",
+            text3: "I don't just build features; I <strong>bridge the gap</strong> between technical complexity and business reality. Whether it's a new SaaS platform or optimizing internal workflows, I bring a holistic \"IT Pro\" mindset to development.",
+            highlights: {
+                bridge: { title: 'The Bridge', desc: 'Connecting IT Systems & Business Goals' },
+                foundation: { title: 'Solid IT Foundation', desc: 'Networking, Security & Admin expertise' },
+                vibecoder: { title: 'Vibecoder', desc: 'Rapid, AI-driven product development' }
+            }
+        },
+        skills: {
+            tag: 'Total Weaponry',
+            title: 'Skills & <span class="gradient-text">Expertise</span>',
+            categories: {
+                frontend: 'Frontend',
+                backend: 'Backend',
+                itops: 'IT Ops & Business',
+                ai: 'AI & Tools'
+            }
+        },
+        projects: {
+            tag: 'Portfolio',
+            title: 'Featured <span class="gradient-text">Projects</span>'
+        },
+        contact: {
+            tag: 'Contact',
+            title: 'Let\'s Build <span class="gradient-text">Together</span>',
+            cardTitle: 'Ready to discuss a project?',
+            cardText: 'Whether you need a developer for a new venture or want to collaborate, I\'m here to help.',
+            btnGithub: 'GitHub',
+            btnLinkedin: 'Connect on LinkedIn'
+        }
+    },
+    pt: {
+        nav: {
+            about: 'Sobre',
+            skills: 'Skills',
+            projects: 'Projetos',
+            contact: 'Fale Comigo'
+        },
+        hero: {
+            badge: 'Unindo Negócios e Tecnologia',
+            title1: 'Estrategista de TI tornado',
+            title2: 'Full-Stack Developer',
+            subtitle: 'Desenvolvedor Full-Stack | Consultor TI | Empreendedor IA',
+            description: 'Com <strong>7+ anos de experiência em TI e Estratégia de Negócios</strong>, crio soluções SaaS práticas e <span class="highlight">focadas no negócio</span>. Faço a ponte entre sistemas complexos, código e lucro.',
+            cta1: 'Ver Código',
+            cta2: 'Minha Jornada',
+            stats: {
+                projects: 'Projetos',
+                exp: 'Anos Exp. TI',
+                tech: 'Tecnologias'
+            }
+        },
+        about: {
+            tag: 'O Meu Diferencial',
+            title: 'A Vantagem <span class="gradient-text">Híbrida</span>',
+            text1: "O meu percurso não é típico. Não escrevo apenas código—já <strong>planeei e instalei soluções de contagem de pessoas para grandes clientes</strong>, <strong>administrei Microsoft 365 para logística</strong> e construí estratégias de negócio.",
+            text2: "Chamo à minha abordagem <strong>Vibecoding</strong>: a capacidade de transformar rapidamente ideias abstratas em software funcional usando IA moderna e um profundo conhecimento de sistemas de TI.",
+            text3: "Não crio apenas funcionalidades; <strong>faço a ponte</strong> entre a complexidade técnica e a realidade do negócio. Seja uma nova plataforma SaaS ou otimização de fluxos internos, trago uma mentalidade holística de \"IT Pro\".",
+            highlights: {
+                bridge: { title: 'A Ponte', desc: 'Conectando Sistemas TI e Objetivos de Negócio' },
+                foundation: { title: 'Base Sólida de TI', desc: 'Redes, Segurança e Administração' },
+                vibecoder: { title: 'Vibecoder', desc: 'Desenvolvimento rápido impulsionado por IA' }
+            }
+        },
+        skills: {
+            tag: 'Arsenal Completo',
+            title: 'Skills e <span class="gradient-text">Expertise</span>',
+            categories: {
+                frontend: 'Frontend',
+                backend: 'Backend',
+                itops: 'Operações TI e Negócio',
+                ai: 'IA e Ferramentas'
+            }
+        },
+        projects: {
+            tag: 'Portfólio',
+            title: 'Projetos em <span class="gradient-text">Destaque</span>'
+        },
+        contact: {
+            tag: 'Contacto',
+            title: 'Vamos Construir <span class="gradient-text">Juntos</span>',
+            cardTitle: 'Pronto para discutir um projeto?',
+            cardText: 'Quer precise de um programador para um novo projeto ou queira colaborar, estou aqui para ajudar.',
+            btnGithub: 'GitHub',
+            btnLinkedin: 'Conectar no LinkedIn'
+        }
+    }
+};
+
+function switchLanguage(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    updateUILanguage();
+
+    // Update toggle button text
+    const toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+        toggleBtn.textContent = lang === 'en' ? '🇵🇹 PT' : '🇬🇧 EN';
+    }
+}
+
+function updateUILanguage() {
+    const t = translations[currentLang];
+
+    // Navbar
+    document.querySelectorAll('.nav-link[href="#about"]').forEach(el => el.textContent = t.nav.about);
+    document.querySelectorAll('.nav-link[href="#skills"]').forEach(el => el.textContent = t.nav.skills);
+    document.querySelectorAll('.nav-link[href="#projects"]').forEach(el => el.textContent = t.nav.projects);
+    document.querySelectorAll('.nav-link[href="#contact"]').forEach(el => el.textContent = t.nav.contact);
+
+    // Hero
+    safeText('.hero-badge span:last-child', t.hero.badge);
+    safeText('.title-line', t.hero.title1);
+    safeText('.title-name', t.hero.title2);
+    // Note: typing text is handled separately, we might want to update phrases too but keeping it simple for now
+    safeHTML('.hero-description', t.hero.description);
+    safeText('.hero-actions .btn-primary span', t.hero.cta1);
+    safeText('.hero-actions .btn-secondary span', t.hero.cta2);
+
+    const statLabels = document.querySelectorAll('.stat-label');
+    if (statLabels[0]) statLabels[0].textContent = t.hero.stats.projects;
+    if (statLabels[1]) statLabels[1].textContent = t.hero.stats.exp;
+    if (statLabels[2]) statLabels[2].textContent = t.hero.stats.tech;
+
+    // About
+    safeText('#about .section-tag', t.about.tag);
+    safeHTML('#about .section-title', t.about.title);
+    safeHTML('.about-intro', t.about.text1);
+    const aboutParagraphs = document.querySelectorAll('.about-text p');
+    if (aboutParagraphs[1]) aboutParagraphs[1].innerHTML = t.about.text2;
+    if (aboutParagraphs[2]) aboutParagraphs[2].innerHTML = t.about.text3;
+
+    // About Highlights
+    const highlights = document.querySelectorAll('.highlight-text');
+    if (highlights[0]) { highlights[0].querySelector('strong').textContent = t.about.highlights.bridge.title; highlights[0].querySelector('span').textContent = t.about.highlights.bridge.desc; }
+    if (highlights[1]) { highlights[1].querySelector('strong').textContent = t.about.highlights.foundation.title; highlights[1].querySelector('span').textContent = t.about.highlights.foundation.desc; }
+    if (highlights[2]) { highlights[2].querySelector('strong').textContent = t.about.highlights.vibecoder.title; highlights[2].querySelector('span').textContent = t.about.highlights.vibecoder.desc; }
+
+    // Skills
+    safeText('#skills .section-tag', t.skills.tag);
+    safeHTML('#skills .section-title', t.skills.title);
+    const skillTitles = document.querySelectorAll('.category-title');
+    // Assuming order: Frontend, Backend, IT Ops, AI
+    if (skillTitles[0]) skillTitles[0].lastChild.textContent = t.skills.categories.frontend;
+    if (skillTitles[1]) skillTitles[1].lastChild.textContent = t.skills.categories.backend;
+    if (skillTitles[2]) skillTitles[2].lastChild.textContent = t.skills.categories.itops;
+    if (skillTitles[3]) skillTitles[3].lastChild.textContent = t.skills.categories.ai;
+
+    // Projects
+    safeText('#projects .section-tag', t.projects.tag);
+    safeHTML('#projects .section-title', t.projects.title);
+
+    // Contact
+    safeText('#contact .section-tag', t.contact.tag);
+    safeHTML('#contact .section-title', t.contact.title);
+    safeText('.cta-card h3', t.contact.cardTitle);
+    safeText('.cta-card p', t.contact.cardText);
+    safeText('.cta-buttons .btn-secondary span', t.contact.btnGithub);
+    safeText('.cta-buttons .btn-primary span', t.contact.btnLinkedin);
+}
+
+function safeText(selector, text) {
+    const el = document.querySelector(selector);
+    if (el) el.textContent = text;
+}
+
+function safeHTML(selector, html) {
+    const el = document.querySelector(selector);
+    if (el) el.innerHTML = html;
 }
 
 // ========================================
