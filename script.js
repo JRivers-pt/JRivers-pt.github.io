@@ -4,6 +4,17 @@
 const projects = [
     // === FEATURED PROJECTS (Top 6 for job hunting) ===
     {
+    {
+        id: 'pontual',
+        title: 'Pontual',
+        description: 'Real-time employee attendance tracking system. Features biometric integration, shift management, and automated payroll reporting.',
+        tags: ['🔥 Featured', 'TypeScript', 'Next.js', 'Biometrics'],
+        features: ['Real-time Tracking', 'Payroll Report', 'Biometrics', 'Shadcn/UI'],
+        githubUrl: 'https://github.com/JRivers-pt/Pontual',
+        icon: '🕒',
+        featured: true
+    },
+    {
         id: 'leadpronto',
         title: 'LeadPronto',
         description: 'AI-powered property booking platform featuring RAG (Retrieval-Augmented Generation) for intelligent, context-aware property recommendations and natural language booking.',
@@ -11,6 +22,37 @@ const projects = [
         features: ['RAG AI Chat', 'Property Search', 'Smart Booking', 'Real-time'],
         githubUrl: 'https://github.com/JRivers-pt/LeadPronto',
         icon: '🏠',
+        featured: true
+    },
+    {
+        id: 'accesshome-pro',
+        title: 'AccessHome Pro',
+        description: 'AI-powered accessibility consultant for interior designers. Performs spatial audits and generates transformed, compliant room visualizations.',
+        tags: ['🔥 Featured', 'React', 'AI', 'Accessibility'],
+        features: ['Spatial Analysis', 'Visual Transformation', 'Mobility Standards'],
+        githubUrl: 'https://github.com/JRivers-pt/spatial-asteroid',
+        icon: '♿',
+        featured: true
+    },
+    {
+        id: 'techscire-remodelacoes',
+        title: 'Techscire Remodelações',
+        description: 'High-performance landing page for construction services. Dark-mode aesthetics with automated lead routing.',
+        tags: ['🔥 Featured', 'HTML', 'Tailwind', 'SEO'],
+        features: ['Lead Gen', 'Dark Mode', 'Speed Optimized'],
+        liveUrl: 'https://jrivers-pt.github.io/techscire-remodelacoes/',
+        githubUrl: 'https://github.com/JRivers-pt/techscire-remodelacoes',
+        icon: '🏗️',
+        featured: true
+    },
+    {
+        id: 'yt-music-downloader',
+        title: 'YT Music Downloader',
+        description: 'Desktop utility for downloading and converting audio from YouTube. Python-based automation with FFmpeg integration.',
+        tags: ['🔥 Featured', 'Python', 'FFmpeg', 'Automation'],
+        features: ['Audio Extraction', 'Metadata Tagging', 'Batch Processing'],
+        githubUrl: 'https://github.com/JRivers-pt/distant-andromeda',
+        icon: '🎵',
         featured: true
     },
     {
@@ -108,11 +150,11 @@ const projects = [
     {
         id: 'sanctum',
         title: 'Sanctum',
-        description: 'Secure password manager and vault application. End-to-end encryption for sensitive data storage.',
-        tags: ['Security', 'Encryption'],
-        features: ['Password Storage', 'Secure Vault', 'E2E Encryption'],
+        description: 'Faith-based social platform focusing on community standards and moral values. A safe space for content creators and meaningful connections.',
+        tags: ['Social Network', 'Community', 'Values'],
+        features: ['Content Sharing', 'Community Standards', 'Safe Space'],
         githubUrl: 'https://github.com/JRivers-pt/Sanctum',
-        icon: '🔐'
+        icon: '✝️'
     },
     {
         id: 'airbnb-leads',
