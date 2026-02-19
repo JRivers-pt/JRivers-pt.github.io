@@ -24,6 +24,37 @@ const projects = [
         featured: true
     },
     {
+        id: 'accesshome-pro',
+        title: 'AccessHome Pro',
+        description: 'AI-powered accessibility consultant for interior designers. Performs spatial audits and generates transformed, compliant room visualizations.',
+        tags: ['🔥 Featured', 'React', 'AI', 'Accessibility'],
+        features: ['Spatial Analysis', 'Visual Transformation', 'Mobility Standards'],
+        githubUrl: 'https://github.com/JRivers-pt/spatial-asteroid',
+        icon: '♿',
+        featured: true
+    },
+    {
+        id: 'techscire-remodelacoes',
+        title: 'Techscire Remodelações',
+        description: 'High-performance landing page for construction services. Dark-mode aesthetics with automated lead routing.',
+        tags: ['🔥 Featured', 'HTML', 'Tailwind', 'SEO'],
+        features: ['Lead Gen', 'Dark Mode', 'Speed Optimized'],
+        liveUrl: 'https://jrivers-pt.github.io/techscire-remodelacoes/',
+        githubUrl: 'https://github.com/JRivers-pt/techscire-remodelacoes',
+        icon: '🏗️',
+        featured: true
+    },
+    {
+        id: 'yt-music-downloader',
+        title: 'YT Music Downloader',
+        description: 'Desktop utility for downloading and converting audio from YouTube. Python-based automation with FFmpeg integration.',
+        tags: ['🔥 Featured', 'Python', 'FFmpeg', 'Automation'],
+        features: ['Audio Extraction', 'Metadata Tagging', 'Batch Processing'],
+        githubUrl: 'https://github.com/JRivers-pt/distant-andromeda',
+        icon: '🎵',
+        featured: true
+    },
+    {
         id: 'ga4-dashboard',
         title: 'GA4 Analytics Dashboard',
         description: 'Real-time Google Analytics 4 dashboard with OAuth integration, performance scoring, and AI-powered insights.',
