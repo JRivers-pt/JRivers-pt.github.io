@@ -873,6 +873,30 @@ button {
     background: linear-gradient(135deg, #3d2a5c 0%, #140e1c 100%);
 }
 
+.project-placeholder.pontual {
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+}
+
+.project-placeholder.accesshome-pro {
+    background: linear-gradient(135deg, #8b5cf6 0%, #5b21b6 100%);
+}
+
+.project-placeholder.techscire-remodelacoes {
+    background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+}
+
+.project-placeholder.yt-music-downloader {
+    background: linear-gradient(135deg, #ef4444 0%, #991b1b 100%);
+}
+
+.project-placeholder.leadpronto {
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+}
+
+.project-placeholder.sanctum {
+    background: linear-gradient(135deg, #fbbf24 0%, #78350f 100%);
+}
+
 .project-overlay {
     position: absolute;
     inset: 0;
